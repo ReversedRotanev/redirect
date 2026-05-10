@@ -1,0 +1,26 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "docs.yourdomain.dev"
+        }
+      ],
+      "destination": "https://docs.example.com/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "go.yourdomain.dev"
+        }
+      ],
+      "destination": "https://github.com/$1",
+      "permanent": false
+    }
+  ]
+}
